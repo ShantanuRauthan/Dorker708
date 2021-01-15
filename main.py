@@ -38,9 +38,6 @@ try:
 except KeyboardInterrupt:
         print ("\n")
         print ("\033[1;91m[!] User Interruption Detected..!\033[0")
-        time.sleep(0.5)
-        print ("\n\n\t\033[1;91m[!] I like to See Ya, Hacking \033[0m😃\n\n")
-        time.sleep(0.5)
         sys.exit(1)
 
 
@@ -85,7 +82,7 @@ def dorks():
     except KeyboardInterrupt:
             print ("\n")
             print ("\033[1;91m[!] User Interruption Detected..!\033[0")
-            
+
 
     print ("[•] Done... Exiting...")
     sys.exit()
