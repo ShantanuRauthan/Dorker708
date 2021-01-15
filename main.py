@@ -50,7 +50,6 @@ def logger(data):
 
 if data.startswith("y" or "Y"):
     l0g = input("[~] Give The File a Name: ")
-    print ("\n" + "  " + "»" * 78 + "\n")
     logger(data)
 else:
     print ("[!] Saving is Skipped...")
@@ -68,13 +67,13 @@ def dorks():
 
         for results in search(dork, tld="com", lang="en", num=int(amount), start=0, stop=None, pause=2):
             counter = counter + 1
-            print ("[+] ", counter, results)
+            print ("[",counter,"]", results)
             time.sleep(0.1)
             requ += 1
             if requ >= int(amount):
                 break
-
-            data = (counter, results)
+            count = [counter]
+            data = [count,results]
 
             logger(data)
             time.sleep(0.1)
